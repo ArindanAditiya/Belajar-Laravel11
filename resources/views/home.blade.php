@@ -7,7 +7,7 @@
     <x-bootstrap5-css></x-bootstrap5-css>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <x-navbar></x-navbar>
     <x-bootstrap5-js></x-bootstrap5-js>
   </body>
 </html>
