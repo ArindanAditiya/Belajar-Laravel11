@@ -1,3 +1,1 @@
-<div>
-    <!-- Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead -->
-</div>
+<script src="bootstrap5/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
