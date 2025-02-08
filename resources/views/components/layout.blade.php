@@ -9,9 +9,11 @@
   <body>
     <x-navbar></x-navbar>
     <x-header>{{ $header }}</x-header>
+
     <div class="container mt-3">
-        {{ $slot }}</h3>
+        {{ $slot }}
     </div>
+    
     <x-bootstrap5-js></x-bootstrap5-js>
   </body>
 </html>
