@@ -1,7 +1,6 @@
 <a 
     {{ $attributes }}
-    class="nav-link {{ $active ? 'active btn btn-secondary btn-sm' : '' }}" 
-    style="background-color: {{ $active ? 'rgba(16,24,38,255)' : 'rgba(31,41,55,255)' }}" 
+    class="nav-link {{ $active ? 'active btn btn-secondary btn-sm bg-navlink-dark ' : 'bg-color-navbar' }}" 
     aria-current="page" 
     href="/">
     {{ $slot }}

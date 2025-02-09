@@ -1,0 +1,17 @@
+/* navbar */
+.bg-color-navbar {
+    background-color: rgba(31, 41, 55, 255) !important;
+}
+.bg-navlink-dark {
+    background-color: rgba(16, 24, 38, 255) !important;
+}
+.costume-pp {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100px !important;
+}
+
+/* article section */
+.border-bottom {
+    border-bottom: 1px solid rgba(31, 41, 55, 255) !important;
+}
