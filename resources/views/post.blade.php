@@ -1,15 +1,17 @@
+
 <x-layout>
+
   <x-slot:title>{{ $title }}</x-slot:title>
+  <x-slot:navbar>{{ $post["id"] }}</x-slot:navbar>
   <x-slot:header>{{ $header }}</x-slot:header>
   
-
   <article class="container mb-2 || border-bottom">
-    <a class="text-dark" href="/posts/{{ $post["id"] }}"><h2>{{ $post["articleTitle"] }}</h2></a>
+    <h2>{{ $post["articleTitle"] }}</h2>
     <p><a href="#">{{ $post["author"] }}</a> | <span>16 Desember 2005</span></p>
     <p>
-      {{ Str::limit($post['body'], 230, "...") }}    
+      {{ $post['body'] }}    
       <br>
-      <a href="/post/{{ $post["id"] }}">Read More &raquo;</a> 
+      <a href="/posts">&laquo; Read More</a> 
     </p>
   </article>
 

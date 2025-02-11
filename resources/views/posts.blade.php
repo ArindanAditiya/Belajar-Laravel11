@@ -1,5 +1,6 @@
 <x-layout>
   <x-slot:title>{{ $title }}</x-slot:title>
+  <x-slot:navbar>{{ true }}</x-slot:navbar>
   <x-slot:header>{{ $header }}</x-slot:header>
   
   @foreach ( $posts as $post )    
@@ -9,7 +10,7 @@
     <p>
       {{ Str::limit($post['body'], 230, "...") }}    
       <br>
-      <a href="/post/{{ $post["id"] }}">Read More &raquo;</a> 
+      <a href="/posts/{{ $post["id"] }}">Read More &raquo;</a> 
     </p>
   </article>
   @endforeach
