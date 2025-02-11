@@ -9,9 +9,9 @@
     <h2>{{ $post["articleTitle"] }}</h2>
     <p><a href="#">{{ $post["author"] }}</a> | <span>16 Desember 2005</span></p>
     <p>
-      {{ $post['body'] }}    
+      {!! $post['body'] !!}    
       <br>
-      <a href="/posts">&laquo; Read More</a> 
+      <a href="/posts">&laquo; Back</a> 
     </p>
   </article>
 
