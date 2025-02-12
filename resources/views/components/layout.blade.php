@@ -10,7 +10,7 @@
     {{-- bootsrtap5 --}}
     <link rel="stylesheet" href="{{ asset('bootstrap5/css/bootstrap.min.css') }}">
   </head>
-  <body>
+  <body >
     <x-navbar>{{ $navbar }}</x-navbar>
     <x-header>{{ $header }}</x-header>
     <div class="container mt-3">

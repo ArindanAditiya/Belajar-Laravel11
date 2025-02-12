@@ -5,12 +5,12 @@
   
   @foreach ( $posts as $post )    
   <article class="container mb-2 || border-bottom">
-    <a class="text-dark" href="/posts/{{ $post["id"] }}"><h2>{{ $post["articleTitle"] }}</h2></a>
-    <p><a href="#">{{ $post["author"] }}</a> | <span>16 Desember 2005</span></p>
+    <a class="text-dark" href="/posts/{{ $post["slug"] }}"><h2>{{ $post["articleTitle"] }}</h2></a>
+    <p><a href="#">{{ $post["author"] }}</a> | <span>{{ $post->created_at->diffForHumans() }}</span></p>
     <p>
       {!! Str::limit($post['body'], 230, "...") !!}    
       <br>
-      <a href="/posts/{{ $post["id"] }}">Read More &raquo;</a> 
+      <a href="/posts/{{ $post["slug"] }}">Read More &raquo;</a> 
     </p>
   </article>
   @endforeach

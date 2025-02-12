@@ -19,17 +19,13 @@ Route::get('/posts', function () {
     return view('posts', [
         'title' => 'Blog',
         'header' => 'My Blog', 
-        'posts' => Post::findAll()
+        'posts' => Post::all()
     ]); 
 });
 
-Route::get('/posts/{id}', function($id){
-
-    $post = Post::findOne($id);
+Route::get('/posts/{post:slug}', function(Post $post){
     
-
     return view('post', ['title'=>'SingleArticle', 'header' => 'My Blog', "post" => $post ]);
-
 }); 
 
 Route::get('/about', function () {
