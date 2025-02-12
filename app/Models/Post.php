@@ -46,7 +46,7 @@ class Post
     }
 
     public static function findOne($id):array
-    {
+    {   
 
         // menggunakan arrow
         // return Arr::first(static::findAll(), fn($post) => $post["id" == $id]);
