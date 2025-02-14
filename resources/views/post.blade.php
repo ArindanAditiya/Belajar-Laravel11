@@ -6,7 +6,7 @@
   <x-slot:header>{{ $header }}</x-slot:header>
   
   <article class="container mb-2 || border-bottom">
-    <h2>{{ $post["articleTitle"] }}</h2>
+    <h2>{{ $post["title"] }}</h2>
     <p><a href="#">{{ $post["author"] }}</a> | <span>{{ $post->created_at->diffForHumans() }}</span></p>
     <p>
       {!! $post['body'] !!}    

@@ -5,7 +5,7 @@
   
   @foreach ( $posts as $post )    
   <article class="container mb-2 || border-bottom">
-    <a class="text-dark" href="/posts/{{ $post["slug"] }}"><h2>{{ $post["articleTitle"] }}</h2></a>
+    <a class="text-dark" href="/posts/{{ $post["slug"] }}"><h2>{{ $post["title"] }}</h2></a>
     <p><a href="#">{{ $post["author"] }}</a> | <span>{{ $post->created_at->diffForHumans() }}</span></p>
     <p>
       {!! Str::limit($post['body'], 230, "...") !!}    
